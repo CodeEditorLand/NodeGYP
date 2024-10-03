@@ -1,50 +1,28 @@
 {
-  "name": "node-gyp",
-  "description": "Node.js native addon build tool",
-  "license": "MIT",
-  "keywords": [
-    "native",
-    "addon",
-    "module",
-    "c",
-    "c++",
-    "bindings",
-    "gyp"
-  ],
-  "version": "9.0.0",
-  "installVersion": 9,
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/nodejs/node-gyp.git"
-  },
-  "preferGlobal": true,
-  "bin": "./bin/node-gyp.js",
-  "main": "./lib/node-gyp.js",
-  "dependencies": {
-    "env-paths": "3.0.0",
-    "glob": "11.0.0",
-    "graceful-fs": "4.2.11",
-    "make-fetch-happen": "14.0.0",
-    "nopt": "8.0.0",
-    "npmlog": "7.0.1",
-    "rimraf": "6.0.1",
-    "semver": "7.6.3",
-    "tar": "7.4.3",
-    "which": "5.0.0"
-  },
-  "engines": {
-    "node": "12.22 || ^14.13 || >=16"
-  },
-  "devDependencies": {
-    "bindings": "1.5.0",
-    "nan": "2.20.0",
-    "require-inject": "1.4.4",
-    "standard": "17.1.2",
-    "tap": "21.0.1"
-  },
-  "scripts": {
-    "lint": "standard */*.js test/**/*.js",
-    "test": "npm run lint && tap --timeout=600 test/test-*"
-  }
+	"bin": "./bin/node-gyp.js",
+	"dependencies": {
+		"env-paths": "3.0.0",
+		"glob": "11.0.0",
+		"graceful-fs": "4.2.11",
+		"make-fetch-happen": "14.0.0",
+		"nopt": "8.0.0",
+		"npmlog": "7.0.1",
+		"rimraf": "6.0.1",
+		"semver": "7.6.3",
+		"tar": "7.4.3",
+		"which": "5.0.0"
+	},
+	"description": "Node.js native addon build tool",
+	"devDependencies": {
+		"bindings": "1.5.0",
+		"nan": "2.20.0",
+		"require-inject": "1.4.4",
+		"standard": "17.1.2",
+		"tap": "21.0.1"
+	},
+	"installVersion": 9,
+	"main": "./lib/node-gyp.js",
+	"name": "node-gyp",
+	"preferGlobal": true,
+	"scripts": {}
 }
